@@ -1,2 +1,0 @@
-Where I am: I have a class that I want to wrap up in a custom class, with a few added features. Right now to instantiate a mongo cursor I must use `MongoClient(host, port).database_name1.collection_name1.action1(arg,arg2)`
-Ideally, I would use a class called SolebMongo or SolebMock (perhaps MockMongo?) which would automatically instantiate a cursor with database_name1 or test_database_name1 and require a sudo command before deleting things from the production environment.  Right now I have a perfect wrapper, but I want to instantiate it as `SolebMongo("goods").find()`
